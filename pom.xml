@@ -219,7 +219,7 @@
                     <fail>true</fail>
                     <cvssScoreThreshold>7.0</cvssScoreThreshold>
 
-                    <!-- Exclude vulnerable dependencies in forked version (0.0.8) of this library -->
+                    <!-- Exclude vulnerable dependencies -->
                     <excludeCoordinates>
                         <exclude>
                             <groupId>commons-fileupload</groupId>

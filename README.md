@@ -29,12 +29,29 @@ Encryption is transparent and you should need to make no change to your code, pr
 Dependency:
 
 ```xml
-<dependency>
-  <groupId>com.github.davidcarboni</groupId>
-  <artifactId>encrypted-file-upload</artifactId>
-  <version>2.0.1</version>
-</dependency>
+    <dependency>
+	    <groupId>com.github.onsdigital</groupId>
+	    <artifactId>dp-cryptolite-java</artifactId>
+	    <version>Tag</version>
+	</dependency>
 ```
+
+## Usage
+### Including in your project
+This is available as a Maven/Gradle dependency from jitpack.io. See https://jitpack.io/#onsdigital/dp-static-files-api-client-java/
+
+If you are not already using jtipack as a maven repo, add the following to your pom file:
+```xml
+    <repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+    </repositories>
+```
+
+Note that the library is to be compiled with and for Java 8.
+
 
 Usage:
 

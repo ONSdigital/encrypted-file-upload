@@ -74,6 +74,14 @@
             <version>1.5</version>
         </dependency>
 
+        <!-- Commons io -->
+        <!-- This is an override for commons-fileupload due to CWE-400 -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.17.0</version>
+        </dependency>
+
         <!-- Encryption -->
         <dependency>
             <groupId>com.github.onsdigital</groupId>

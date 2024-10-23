@@ -29,6 +29,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
+import java.nio.file.InvalidPathException;
 
 import com.github.davidcarboni.fileupload.encrypted.EncryptedFileItemFactory;
 import org.apache.commons.io.FileUtils;
@@ -158,7 +159,7 @@ public class DiskFileItemSerializeTest {
     /**
      * Test deserialization fails when repository contains a null character.
      */
-    @Test(expected=IOException.class)
+    @Test(expected=InvalidPathException.class)
     public void testInvalidRepositoryWithNullChar() throws Exception {
         // Create the FileItem
         byte[] testFieldValueBytes = createContentBytes(threshold);

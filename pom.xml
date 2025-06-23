@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.davidcarboni</groupId>
+    <groupId>com.github.onsdigital</groupId>
     <artifactId>encrypted-file-upload</artifactId>
     <version>2.1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -16,7 +16,7 @@
         The feature is transparent and encryption keys are ephemeral, living only for the
         lifetime of a FileItem instance.
     </description>
-    <url>https://github.com/davidcarboni/encrypted-file-upload</url>
+    <url>https://www.ons.gov.uk/</url>
 
     <licenses>
         <license>
@@ -26,18 +26,6 @@
             <comments>A business-friendly OSS license</comments>
         </license>
     </licenses>
-
-    <organization>
-        <name>Carboni</name>
-        <url>https://github.com/carboni/</url>
-    </organization>
-
-    <scm>
-        <url>https://github.com/davidcarboni/encrypted-file-upload</url>
-        <connection>scm:git:git://github.com/davidcarboni/encrypted-file-upload.git</connection>
-        <developerConnection>scm:git:git@github.com:davidcarboni/encrypted-file-upload.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
 
     <distributionManagement>
         <snapshotRepository>
@@ -78,9 +66,8 @@
         <dependency>
             <groupId>com.github.onsdigital</groupId>
             <artifactId>dp-cryptolite-java</artifactId>
-            <version>1.6.0</version>
+            <version>1.7.0</version>
         </dependency>
-
 
         <!-- Test -->
         <dependency>

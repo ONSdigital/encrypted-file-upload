@@ -71,15 +71,7 @@
         <dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
-            <version>1.5</version>
-        </dependency>
-
-        <!-- Commons io -->
-        <!-- This is an override for commons-fileupload due to CWE-400 -->
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.17.0</version>
+            <version>1.6.0</version>
         </dependency>
 
         <!-- Encryption -->
@@ -228,16 +220,6 @@
                     <!-- if CVSS >= 7.0 (high or critical) then ERROR else WARN -->
                     <fail>true</fail>
                     <cvssScoreThreshold>7.0</cvssScoreThreshold>
-
-                    <!-- Exclude vulnerable dependencies -->
-                    <excludeCoordinates>
-                        <!--- This is the latest version and has vulnerability CWE-770 - Allocation of Resources Without Limits or Throttling -->
-                        <exclude>
-                            <groupId>commons-fileupload</groupId>
-                            <artifactId>commons-fileupload</artifactId>
-                            <version>1.5</version>
-                        </exclude>
-                    </excludeCoordinates>
 
                 </configuration>
             </plugin>

@@ -1,7 +1,15 @@
 OSSINDEX_ERRORS = "Unable to contact OSS Index|authentication failed|401 Unauthorized|403 Forbidden|429 Too Many Requests|Too many requests|Rate limit|Unknown host|Connection refused|timed out|unreachable|402 Payment Required"
 
 .PHONY: all
-all: audit test build lint
+all: clean build test audit lint analyze-dependencies
+
+.PHONY: clean
+clean:
+	mvn clean
+
+.PHONY: analyze-dependencies
+analyze-dependencies:
+	mvn -Dossindex.skip=true -DfailOnWarning=true dependency:analyze
 
 .PHONY: audit
 audit:
